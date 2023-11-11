@@ -1,0 +1,213 @@
+
+.swip{
+    margin-left:-25px;
+}
+#pics #images{
+    width: 96.7%;
+    height: 80vh;
+    position: absolute;
+}
+#previous{
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    left: 50px;
+    top: 50%;
+    z-index: 100;
+    background: transparent;
+    font-size: 4rem;
+    border: none;
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#next{
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    right: 0;
+    top: 50%;
+    z-index: 100;
+    background: transparent;
+    font-size: 4rem;
+    border: none;
+    color: white;
+}
+#title{
+    position: absolute;
+    z-index: 101;
+    color: azure;
+    width: 35%;
+    top: 15%;
+    left: 10%;
+}
+@media screen and (max-width:1200px){
+    #title{
+        width: 70%;
+    }
+}
+#title h1{
+    text-shadow:0 0 10px white;
+}
+#title p{
+    font-size: large;
+    text-shadow:0 0 10px rgb(255, 255, 255);
+    line-height: 30px;
+}
+#title button{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    background: transparent;
+    color: azure;
+    cursor: pointer;
+    border: 1px solid azure;
+    transition: 0.7s;
+    font-size: 1.5rem;
+}
+#title button:hover{
+    background: rgb(17, 222, 222);
+    color: black;
+    border: 1px solid rgb(17, 222, 222);
+}
+.items{
+    color: rgb(221, 218, 218);
+    position: absolute;
+    top: 90%;
+    width: 96.7%;
+    height: auto;
+    margin-left:-25px;
+    overflow: hidden;
+}
+.items h1{
+    text-align: center;
+    text-decoration: overline;
+}
+.items img{
+    width: 90%;
+    border: 3px solid black;
+}
+.items img:hover{
+    margin-left: 100%;
+}
+.items .description{
+    width: 90%;
+    padding: 0 30px;
+    line-height: 60px;
+}
+.items .watches,.jewelry,.sunglasses{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+}
+.items .watches,.jewelry{
+    margin-bottom: -80px;
+}
+.pic span{
+    color: black;
+}
+.pic p{
+    position: relative;
+    top: -100px;
+    left: 8%;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 60px;
+    background-color: aliceblue;
+    text-align: center;
+    border-radius: 20px;
+    border-top-left-radius:80px;
+    border-bottom-right-radius:80px;
+}
+.pic p button{
+    width: 50%;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    background: black;
+    color: white;
+    align-self: center;
+    z-index: 100;
+    transition: 1s;
+    cursor: pointer;
+    border-top-left-radius:80px;
+    border-bottom-right-radius:80px;
+}
+.pic p button:hover{
+    background: rgb(17, 222, 222);
+    color: black;
+    border: 1px solid rgb(17, 222, 222);
+}
+#pic1,#pic2,#pic3{
+    border-radius: 10px;
+    border-top-left-radius:100px;
+    border-bottom-right-radius:100px;
+}
+
+.st video{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 200vh;
+    object-fit: cover;
+    filter: blur(30px);
+}
+.footer{
+    background-color: rgb(255, 255, 255);
+    color: rgb(9, 9, 9);
+    position: relative;
+    bottom: 0;
+    margin-left: 14%;
+    width: 80%;
+    padding: 20px;
+    z-index: 100;
+    display: flex;
+}
+.footer .contact{
+    width: 20%;
+}
+.footer .links{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.footer .links .l1,.l2,.l3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer .links a{
+    text-decoration: none;
+    color:rgb(84, 82, 79);
+}
+.log1{
+    position: absolute;
+    margin-left: 10px;
+    right: 0;
+    width: 10%;
+    top: 40px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: white;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+.log2{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 0;
+    top: 10px;
+    width: 10%;
+    text-align: left;
+    font-size: 1.1rem;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 1000;
+}

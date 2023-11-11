@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'poppins';
+    src: url('../Fonts/Cinzel/Cinzel-VariableFont_wght.ttf');
+}
+.all{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+}
+.sidebar{
+
+    position: absolute;
+    width: 50px;
+    background: #ffffff;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.sidebar .logo{
+    margin-left: -90px;
+}
+.sidebar:hover{
+    width: 250px;
+}
+.sidebar ul{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sidebar ul li{
+    position: relative;
+    list-style: none;
+    
+}
+.sidebar ul .Menulist{
+    height: 90vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.sidebar ul li a{
+    font-family: 'poppins';
+    color: #333;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 700;
+    width: 110%;
+    margin-left: -40px;
+    display: flex;
+    padding: 8px 9px;
+}
+
+.sidebar a .text{
+    margin-left: 50px;
+}
+.active{
+    height: 33px;
+    margin: 0 5px;
+    background-color: #4c4d50;
+    border-radius: 10px;
+
+}
+
+.active .icon, .active .text{
+    color: #ffffff;
+}
+.active .icon{
+    background: #f64c72;
+    padding: 0 8px;
+    border-radius: 50px;
+}
+.icon{
+    font-size: 1.7rem;
+}
